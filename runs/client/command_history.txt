@@ -1,0 +1,2 @@
+/give Dev es2:detolite
+/seed

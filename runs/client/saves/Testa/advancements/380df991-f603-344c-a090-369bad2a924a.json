@@ -1,0 +1,22 @@
+{
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2024-04-18 21:35:17 -0600"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:taiga": "2024-04-18 21:35:18 -0600",
+      "minecraft:river": "2024-04-19 00:33:04 -0600"
+    },
+    "done": false
+  },
+  "minecraft:story/lava_bucket": {
+    "criteria": {
+      "lava_bucket": "2024-04-19 00:07:35 -0600"
+    },
+    "done": true
+  },
+  "DataVersion": 3700
+}

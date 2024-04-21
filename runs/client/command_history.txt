@@ -1,2 +1,6 @@
 /give Dev es2:detolite
 /seed
+/time set noon
+/gamerule doDaylightCycle false
+/give Dev es2:detolite_dust
+/give Dev es2:detolite_refined

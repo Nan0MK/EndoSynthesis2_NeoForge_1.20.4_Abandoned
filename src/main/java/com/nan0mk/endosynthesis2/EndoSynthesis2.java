@@ -47,9 +47,9 @@ public class EndoSynthesis2 {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
 
     // Creates a new Block with the id "es2:example_block", combining the namespace and path
-    public static final DeferredBlock<Block> EXAMPLE_BLOCK = BLOCKS.registerSimpleBlock("example_block", BlockBehaviour.Properties.of().mapColor(MapColor.STONE));
+        // public static final DeferredBlock<Block> EXAMPLE_BLOCK = BLOCKS.registerSimpleBlock("example_block", BlockBehaviour.Properties.of().mapColor(MapColor.STONE));
     // Creates a new BlockItem with the id "es2:example_block", combining the namespace and path
-    public static final DeferredItem<BlockItem> EXAMPLE_BLOCK_ITEM = ITEMS.registerSimpleBlockItem("example_block", EXAMPLE_BLOCK);
+        // public static final DeferredItem<BlockItem> EXAMPLE_BLOCK_ITEM = ITEMS.registerSimpleBlockItem("example_block", EXAMPLE_BLOCK);
 
     // Creates a new food item with the id "es2:example_id", nutrition 1 and saturation 2
     public static final DeferredItem<Item> EXAMPLE_ITEM = ITEMS.registerSimpleItem("example_item", new Item.Properties().food(new FoodProperties.Builder()
@@ -60,8 +60,18 @@ public class EndoSynthesis2 {
             .withTabsBefore(CreativeModeTabs.COMBAT)
             .icon(() -> EXAMPLE_ITEM.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
-                output.accept(EXAMPLE_ITEM.get()); // Add the example item to the tab. For your own tabs, this method is preferred over the event
+                // Add the example item to the tab. For your own tabs, this method is preferred over the event
+
+//                for x in ItemInit{  //Try to get this to work
+//                    output.accept(ItemInit.x.get());
+//                }
+
+                //My manual adding of my items to
                 output.accept(ItemInit.DETOLITE.get());
+                output.accept(ItemInit.DETOLITE_DUST.get());
+                output.accept(ItemInit.DETOLITE_REFINED.get());
+                output.accept(ItemInit.ADONITE_DUST.get());
+                output.accept(ItemInit.ADONITE_REFINED.get());
             }).build());
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
@@ -107,8 +117,8 @@ public class EndoSynthesis2 {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS)
-            event.accept(EXAMPLE_BLOCK_ITEM);
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS)
+            event.accept(ItemInit.DETOLITE_DUST);
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

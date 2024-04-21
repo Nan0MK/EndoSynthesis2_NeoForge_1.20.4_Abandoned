@@ -1,3 +1,8 @@
 {
-  "item.es2.detolite": "Detolite"
+  "item.es2.detolite": "Detolite",
+  "item.es2.detolite_dust": "Detolite Dust",
+  "item.es2.detolite_refined": "Refined Detolite",
+
+  "item.es2.adonite_dust": "Adonite Dust",
+  "item.es2.adonite_refined": "Refined Adonite"
 }

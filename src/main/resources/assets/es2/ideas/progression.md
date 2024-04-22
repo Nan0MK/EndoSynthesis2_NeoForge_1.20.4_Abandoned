@@ -28,6 +28,12 @@ Malkezium {Multi-miner(Pickaxe, Shovel, Axe),  Multi-killer(Sword, Gun), Multi-f
     Obsidiator takes cobblestone as fuel for other stone types\
     Each obidiator can only be set to one stone type or lava\
 
+#### Slag Hull:
+    Catches byproducts produced from using vanilla blast furnace.
+    If placed next to blast furnace, it will recieve the byproduct.
+
+#### EndoChest:
+    A big chest that looks cool.
 
 ## Blocks:
 Treated wood\

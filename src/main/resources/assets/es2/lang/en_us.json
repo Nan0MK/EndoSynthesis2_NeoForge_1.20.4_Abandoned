@@ -2,7 +2,17 @@
   "item.es2.detolite": "Detolite",
   "item.es2.detolite_dust": "Detolite Dust",
   "item.es2.detolite_refined": "Refined Detolite",
+  "item.es2.detolite_crystal": "Detolite Crystal",
+  "item.es2.detolite_crystal_data": "Detolite Crystal (data)",
+  "item.es2.detolite_crystal_depleted": "Detolite Crystal (depleted)",
+
+  "item.es2.crissite_crystal": "Crissite Crystal",
+  "item.es2.crissite_crystal_data": "Crissite Crystal (data)",
+  "item.es2.crissite_crystal_depleted": "Crissite Crystal (depleted)",
 
   "item.es2.adonite_dust": "Adonite Dust",
-  "item.es2.adonite_refined": "Refined Adonite"
+  "item.es2.adonite_refined": "Refined Adonite",
+
+  "item.es2.septugium": "Septugium",
+  "item.es2.malkezium": "Malkezium"
 }

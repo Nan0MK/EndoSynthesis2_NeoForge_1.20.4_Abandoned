@@ -70,8 +70,19 @@ public class EndoSynthesis2 {
                 output.accept(ItemInit.DETOLITE.get());
                 output.accept(ItemInit.DETOLITE_DUST.get());
                 output.accept(ItemInit.DETOLITE_REFINED.get());
+                output.accept(ItemInit.DETOLITE_CRYSTAL.get());
+                output.accept(ItemInit.DETOLITE_CRYSTAL_DATA.get());
+                output.accept(ItemInit.DETOLITE_CRYSTAL_DEPLETED.get());
+
+                output.accept(ItemInit.CRISSITE_CRYSTAL.get());
+                output.accept(ItemInit.CRISSITE_CRYSTAL_DATA.get());
+                output.accept(ItemInit.CRISSITE_CRYSTAL_DEPLETED.get());
+
                 output.accept(ItemInit.ADONITE_DUST.get());
                 output.accept(ItemInit.ADONITE_REFINED.get());
+
+                output.accept(ItemInit.SEPTUGIUM.get());
+                output.accept(ItemInit.MALKEZIUM.get());
             }).build());
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
